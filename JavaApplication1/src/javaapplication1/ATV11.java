@@ -3,6 +3,16 @@ import java.util.Scanner;
 public class ATV11 {
 
     
+    public static boolean ehFim(String palavra) { // verifica se a entrada e FIM
+
+        if (palavra.length() != 3) {
+            return false; // verifica se sao so 3 caracteres
+        }
+
+        return palavra.charAt(0) == 'F' && palavra.charAt(1) == 'I' && palavra.charAt(2) == 'M'; // verifica se e exatamente FIM
+    }
+
+
     public static String inverter(String palavra, int i) { // metodo recursivo para inverter a string
 
         
@@ -23,6 +33,11 @@ public class ATV11 {
 
     while (sc.hasNextLine()) { // continua enquanto houver linha 
         String palavra = sc.nextLine(); // le a palavra digitada
+
+        if (ehFim(palavra)) {
+            break; // para o loop se o usuario digitar FIM
+        }
+
         System.out.println(inverter(palavra, 0)); // chama o metodo para inverter e mostra o resultado
     }
 
