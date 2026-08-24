@@ -9,8 +9,7 @@ public class ATV01 {
         if (mensagem.length() != 3) {
             return false;   // verifica sse s'ao so tres caracteres, pra nao ser apenas uma mensagem que tenha escrito fim nela
         }
-
-       
+               
         if (mensagem.charAt(0) == 'F' && mensagem.charAt(1) == 'I' && mensagem.charAt(2) == 'M') { 
 
             return true;   // VERIFICA TODOS OS CARACTERES se estao como fim 
