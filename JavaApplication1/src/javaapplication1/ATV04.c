@@ -9,7 +9,7 @@ void inverter(char str[], int tamanho, char resultado[]) { // funcao que recebe 
     resultado[tamanho] = '\0'; // marca o fim da palavra
 }
 
-int main() {
+int main() { //t
 
     char entrada[1000];
     char invertida[1000];
