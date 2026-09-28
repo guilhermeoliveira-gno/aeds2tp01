@@ -38,7 +38,7 @@ class Veiculo {
     private String categoria;
     private String[] combustivel;
     private int cilindros;
-    double cilindrada;
+    private double cilindrada;
     private String transmissao;
     private String tracao;
     private double consumoCidade;
